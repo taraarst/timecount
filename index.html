@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>Happy Birthday Azik!</title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio without Controls</title>
+    <style>
+        /* Sembunyikan elemen audio */
+        .hidden-audio {
+            display: none;
+        }
+    </style>
+	</head>
+
+	<body style="margin:0px">
+		 <!-- Elemen audio tanpa kontrol -->
+		 <audio class="hidden-audio" autoplay>
+			<source src="music/audio.ogg" type="audio/ogg">
+			Your browser does not support the audio element.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img id="img" src="">
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">Click!</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">Azik's Time Count</h2>
+			<div id="timer">
+				<b id="d"></b> Days 
+				<b id="h"></b> Hours
+				<b id="m"></b> Minutes
+				<b id="s"></b> Seconds
+			</div>
+		</div>
+
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span>
+    	</div>		
+
+		<script >
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			var imageArray = ["pic/pic1.png", "pic/pic2.png", "pic/pic3.png", "pic/pic4.png", "pic/pic5.png", "pic/pic6.png", 
+			"pic/pic7.png", "pic/pic8.png"];
+			var imageIndex = 0;
+			var txtArray = ["The world welcomed a precious soul", "Curiosity began to shape your dreams","In these early years, the seeds of your character were sown","With each step, you grew wiser and stronger","In the midst of growing up, you found your way","Every challenge you faced shaped the person you are today","A heart filled with dreams, a mind full of determination","From a dreamer to a doer, you've achieved so much",];
+			 var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>
